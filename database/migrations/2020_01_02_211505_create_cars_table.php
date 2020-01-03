@@ -16,7 +16,7 @@ class CreateCarsTable extends Migration
         Schema::create('cars', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            $table->date('model'); // Modelo
+            $table->year('model'); // Modelo
             $table->string('color'); // Color
             $table->string('license_plate'); // Placa
             $table->integer('num_doors'); // Numero de puertas
