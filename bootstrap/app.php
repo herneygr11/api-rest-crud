@@ -97,4 +97,6 @@ $app->router->group([
     require __DIR__.'/../routes/web.php';
 });
 
+date_default_timezone_set(env('APP_TIMEZONE', 'UTC'));
+
 return $app;
